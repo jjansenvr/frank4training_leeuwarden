@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  StUF:          http://www.egem.nl/StUF/StUF0301
+	  StUF-ZKN 3.10: http://www.egem.nl/StUF/sector/zkn/0310 -->
+<zakLk01>
+	<stuurgegevens>
+		<berichtcode>Lk01</berichtcode>
+		<zender>
+			<organisatie>Circle Software</organisatie>
+			<applicatie>JVS</applicatie>
+		</zender>
+		<ontvanger>
+			<organisatie>Circle Software</organisatie>
+			<applicatie>Djuma</applicatie>
+		</ontvanger>
+		<referentienummer>752024915e81411da3e7dddea963ad27</referentienummer>
+		<tijdstipBericht>20191030115239724</tijdstipBericht>
+		<entiteittype>ZAK</entiteittype>
+	</stuurgegevens>
+	<parameters>
+		<mutatiesoort>W</mutatiesoort>
+		<indicatorOvername>V</indicatorOvername>
+	</parameters>
+	<object entiteittype="ZAK" sleutelVerzendend="3083472" verwerkingssoort="W">
+		<identificatie>000012611</identificatie>
+		<omschrijving>Absoluut verzuim</omschrijving>
+		<tijdvakGeldigheid>
+			<beginGeldigheid>20191030115039413</beginGeldigheid>
+			<eindGeldigheid>20191030115217920</eindGeldigheid>
+		</tijdvakGeldigheid>
+		<isVan verwerkingssoort="W" entiteittype="ZAKZKT">
+			<gerelateerde entiteittype="ZKT" verwerkingssoort="I">
+				<omschrijving>Terrasvergunning</omschrijving>
+				<code>2011</code>
+				<ingangsdatumObject noValue="waardeOnbekend" xsi:nil="true"/>
+			</gerelateerde>
+		</isVan>
+		<heeft entiteittype="ZAKSTT" verwerkingssoort="W">
+			<gerelateerde entiteittype="STT" verwerkingssoort="I">
+				<zkt.code>2011</zkt.code>
+				<zkt.omschrijving noValue="waardeOnbekend" xsi:nil="true"/>
+				<volgnummer>1</volgnummer>
+				<code noValue="waardeOnbekend" xsi:nil="true"/>
+				<omschrijving>Geïnitieerd</omschrijving>
+				<ingangsdatumObject noValue="waardeOnbekend" xsi:nil="true"/>
+			</gerelateerde>
+			<datumStatusGezet>20191030115039413</datumStatusGezet>
+			<tijdvakRelatie>
+				<beginRelatie>20191030115039413</beginRelatie>
+				<eindRelatie noValue="geenWaarde" xsi:nil="true"/>
+			</tijdvakRelatie>
+		</heeft>
+		<heeft entiteittype="ZAKSTT" verwerkingssoort="T" noValue="geenWaarde" xsi:nil="true"/>
+	</object>
+	<object entiteittype="ZAK" sleutelVerzendend="3083472" verwerkingssoort="W">
+		<identificatie>000012611</identificatie>
+		<omschrijving>Absoluut verzuim</omschrijving>
+		<tijdvakGeldigheid>
+			<beginGeldigheid>20191030115217920</beginGeldigheid>
+			<eindGeldigheid noValue="geenWaarde" xsi:nil="true"/>
+		</tijdvakGeldigheid>
+		<tijdstipRegistratie>20191030115217920</tijdstipRegistratie>
+		<isVan verwerkingssoort="W" entiteittype="ZAKZKT">
+			<gerelateerde entiteittype="ZKT" verwerkingssoort="I">
+				<omschrijving>Terrasvergunning</omschrijving>
+				<code>2011</code>
+				<ingangsdatumObject noValue="waardeOnbekend" xsi:nil="true"/>
+			</gerelateerde>
+		</isVan>
+		<heeft entiteittype="ZAKSTT" verwerkingssoort="W">
+			<gerelateerde entiteittype="STT" verwerkingssoort="I">
+				<zkt.code>2011</zkt.code>
+				<zkt.omschrijving noValue="waardeOnbekend" xsi:nil="true"/>
+				<volgnummer>1</volgnummer>
+				<code noValue="waardeOnbekend" xsi:nil="true"/>
+				<omschrijving>Geïnitieerd</omschrijving>
+				<ingangsdatumObject noValue="waardeOnbekend" xsi:nil="true"/>
+			</gerelateerde>
+			<datumStatusGezet>20191030115039413</datumStatusGezet>
+			<tijdvakRelatie>
+				<beginRelatie>20191030115039413</beginRelatie>
+				<eindRelatie>20191030115217920</eindRelatie>
+			</tijdvakRelatie>
+		</heeft>
+		<heeft entiteittype="ZAKSTT" verwerkingssoort="T">
+			<gerelateerde entiteittype="STT" verwerkingssoort="T">
+				<zkt.code>2011</zkt.code>
+				<zkt.omschrijving noValue="waardeOnbekend" xsi:nil="true"/>
+				<volgnummer>2</volgnummer>
+				<code noValue="waardeOnbekend" xsi:nil="true"/>
+				<omschrijving>In behandeling genomen</omschrijving>
+				<ingangsdatumObject noValue="waardeOnbekend" xsi:nil="true"/>
+			</gerelateerde>
+			<datumStatusGezet>20191030115217920</datumStatusGezet>
+			<tijdvakRelatie>
+				<beginRelatie>20191030115217920</beginRelatie>
+				<eindRelatie noValue="geenWaarde" xsi:nil="true"/>
+			</tijdvakRelatie>
+			<isGezetDoor entiteittype="ZAKSTTBTR" verwerkingssoort="T">
+				<gerelateerde>
+					<medewerker entiteittype="MDW" sleutelVerzendend="3034551" verwerkingssoort="I">
+						<identificatie>RTA</identificatie>
+					</medewerker>
+				</gerelateerde>
+			</isGezetDoor>
+		</heeft>
+	</object>
+</zakLk01>
