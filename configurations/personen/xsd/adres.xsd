@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://voorbeeld.com/adres"
+           xmlns="http://voorbeeld.com/adres"
+           elementFormDefault="qualified">
+  <xs:element name="adres">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="straat" type="xs:string"/>
+        <xs:element name="huisnummer" type="xs:string"/>
+        <xs:element name="postcode" type="xs:string"/>
+        <xs:element name="plaats" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

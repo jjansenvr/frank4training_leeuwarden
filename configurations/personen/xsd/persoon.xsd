@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:persoon="http://voorbeeld.com/persoon" targetNamespace="http://voorbeeld.com/persoon" xmlns:adrs="http://voorbeeld.com/adres" elementFormDefault="qualified">
+  <xs:import namespace="http://voorbeeld.com/adres" schemaLocation="adres.xsd"/>
+    <xs:element name="persoon">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="voornaam" type="xs:string" />
+                <xs:element name="achternaam" type="xs:string" />
+                <xs:element name="adressen">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="adrs:adres" maxOccurs="unbounded">
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

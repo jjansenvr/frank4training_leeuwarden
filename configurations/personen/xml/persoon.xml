@@ -1,18 +1,19 @@
-<persoon>
+<persoon xmlns="http://voorbeeld.com/persoon"
+      xmlns:adrs="http://voorbeeld.com/adres">
     <voornaam>Jeroen</voornaam>
     <achternaam>Jansen van Rosendaal</achternaam>
     <adressen>
-        <adres type="woon">
-            <straat>Molenstraat</straat>
-            <huisnummer>1</huisnummer>
-            <postcode>1234 AA</postcode>
-            <plaats>Moerdijk</plaats>
-        </adres>
-        <adres type="werk">
-            <straat>Westersingel</straat>
-            <huisnummer>42</huisnummer>
-            <postcode>3014 GT</postcode>
-            <plaats>Rotterdam</plaats>
-        </adres>
+        <adrs:adres type="woon">
+            <adrs:straat>Molenstraat</adrs:straat>
+            <adrs:huisnummer>1</adrs:huisnummer>
+            <adrs:postcode>1234 AA</adrs:postcode>
+            <adrs:plaats>Moerdijk</adrs:plaats>
+        </adrs:adres>
+        <adrs:adres type="werk">
+            <adrs:straat>Westersingel</adrs:straat>
+            <adrs:huisnummer>42</adrs:huisnummer>
+            <adrs:postcode>3014 GT</adrs:postcode>
+            <adrs:plaats>Rotterdam</adrs:plaats>
+        </adrs:adres>
     </adressen>
 </persoon>
