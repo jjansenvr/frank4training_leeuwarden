@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "xslt",
+      "request": "launch",
+      "name": "Debug XSLT",
+      "engine": "saxonnet",
+      "stylesheet": "${workspaceFolder}\\configurations\\personen\\xsl\\persoon2brieven.xsl",
+      "xml": "${workspaceFolder}\\configurations\\personen\\xml\\persoon.xml",
+      "stopOnEntry": true,
+      "debug": true,
+      "logLevel": "trace",
+    },
+    {
+      "type": "datasonnet",
+      "request": "launch",
+      "name": "Datasonnet - JSON",
+      "program": "${file}",
+      "fileBasename": "${fileBasename}",
+      "payload": "${workspaceFolder}\\configurations\\personen\\ds\\payload.json",
+      "outputType": "application/json"
+    },
+    {
+      "type": "datasonnet",
+      "request": "launch",
+      "name": "Datasonnet - XML",
+      "program": "${file}",
+      "fileBasename": "${fileBasename}",
+      "payload": "${workspaceFolder}/resources/payload.json",
+      "outputType": "application/xml"
+    }
+  ]
+}

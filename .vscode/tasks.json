@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "xslt",
+      "label": "xslt: Saxon Transform",
+      "saxonJar": "${config:XSLT.tasks.saxonJar}",
+      "xsltFile": "${command:xslt-xpath.pickXsltFile}",
+      "xmlSource": "${command:xslt-xpath.pickXmlSourceFile}",
+      "resultPath": "${workspaceFolder}/xsl-out/result1.xml",
+      "allowSyntaxExtensions40": "off",
+      "messageEscaping": "adaptive",
+      "group": {
+        "kind": "build"
+      },
+      "problemMatcher": [
+        "$saxon-xslt"
+      ]
+    },
+    {
+      "type": "xslt-js",
+      "label": "xslt-js: Saxon-JS Transform",
+      "xsltFile": "${command:xslt-xpath.pickXsltFile}",
+      "xmlSource": "${command:xslt-xpath.pickXmlSourceFile}",
+      "resultPath": "${workspaceFolder}/xsl-out/result1.xml",
+      "group": {
+        "kind": "build"
+      },
+      "problemMatcher": [
+        "$saxon-xslt-js"
+      ]
+    }
+  ]
+}
