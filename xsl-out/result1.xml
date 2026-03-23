@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<brieven>
-   <brief>
-      <aanhef>Jeroen Jansen van Rosendaal</aanhef>
-      <adres>
-         <straat>Molenstraat</straat>
-         <huisnummer>1</huisnummer>
-         <postcode>1234 AA</postcode>
-         <plaats>Moerdijk</plaats>
-      </adres>
-   </brief>
-</brieven>
+<brief>
+   <adresregel_1>Jeroen Jansen van Rosendaal</adresregel_1>
+   <adresregel_2>Westersingel 42</adresregel_2>
+   <adresregel_3>3014 GT Rotterdam</adresregel_3>
+</brief>

@@ -1,0 +1,19 @@
+<?xml-model href="persoon.xsd"?>
+<persoon>
+    <voornaam>Jeroen</voornaam>
+    <achternaam>Jansen van Rosendaal</achternaam>
+    <adressen>
+        <adres type="woon">
+            <straat>Molenstraat</straat>
+            <huisnummer>1</huisnummer>
+            <postcode>1234 AA</postcode>
+            <plaats>Moerdijk</plaats>
+        </adres>
+        <adres type="werk">
+            <straat>Westersingel</straat>
+            <huisnummer>42</huisnummer>
+            <postcode>3014 GT</postcode>
+            <plaats>Rotterdam</plaats>
+        </adres>
+    </adressen>
+</persoon>
