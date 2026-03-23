@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:cus="http://example.com/customer">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <cus:GetCustomerResponse>
+            <cus:Customer>
+                <cus:CustomerId>123456</cus:CustomerId>
+                <cus:FirstName>Anna</cus:FirstName>
+                <cus:LastName>de Vries</cus:LastName>
+                <cus:Email>anna.devries@example.com</cus:Email>
+                <cus:Active>true</cus:Active>
+            </cus:Customer>
+        </cus:GetCustomerResponse>
+    </soapenv:Body>
+</soapenv:Envelope>
