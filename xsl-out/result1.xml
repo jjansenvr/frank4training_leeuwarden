@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<brief>
-   <adresregel_1>Jeroen Jansen van Rosendaal</adresregel_1>
-   <adresregel_2>Westersingel 42</adresregel_2>
-   <adresregel_3>3014 GT Rotterdam</adresregel_3>
-</brief>
+<output>
+   <landnaam>Nederland</landnaam>
+   <landnummerprefix>+31</landnummerprefix>
+</output>

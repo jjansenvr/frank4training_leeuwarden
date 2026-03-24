@@ -18,6 +18,11 @@
 				<Forward name="outputWarnings" path="error" />
 				<Forward name="success" path="READY"/>
 			</XmlInputValidator>
+			
+			<Exits>
+				<Exit name="READY" state="SUCCESS" />
+			</Exits>
+
 			<XsltPipe name="transform XML" styleSheetName="xsl/persoon2brief.xsl"/>
 			<EchoPipe name="okay">
 				<Forward name="success" path="READY"/>
@@ -25,9 +30,7 @@
 			<EchoPipe name="error" getInputFromFixedValue="error">
 				<Forward name="success" path="READY"/>
 			</EchoPipe>
-			<Exits>
-				<Exit name="READY" state="SUCCESS" />
-			</Exits>
+
 		</Pipeline>
 	</Adapter>
 	
