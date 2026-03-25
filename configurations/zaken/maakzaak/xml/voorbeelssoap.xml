@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:zak="http://example.com/zaak">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <zak:CreeerZaakRequest>
+            <Referentie>EXT-20260324-001</Referentie>
+            <ZaakType>VergunningAanvraag</ZaakType>
+            <Omschrijving>Aanvraag voor omgevingsvergunning</Omschrijving>
+            <StartDatum>2026-03-24</StartDatum>
+            <Initiator>Jeroen Jansen van Rosendaal</Initiator>
+        </zak:CreeerZaakRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

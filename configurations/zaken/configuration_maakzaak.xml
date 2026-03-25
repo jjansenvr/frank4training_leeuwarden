@@ -1,0 +1,37 @@
+<Module
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../FrankConfig.xsd"
+	>
+	<Adapter name="Creeer Zaak">
+		<Receiver name="local-zaak">
+			<WebServiceListener name="local-zaak-listener" soapAction="creerzaak" />
+		</Receiver>
+		<Pipeline firstPipe="transform XML">
+
+			<XmlInputValidator name="validateZaak" schema="xsd/zaak.xsd" root="zaak">
+				<Forward name="exception" path="error" />
+				<Forward name="parserError" path="error" />
+				<Forward name="failure" path="error" />
+				<Forward name="warnings" path="error" />
+				<Forward name="outputParserError" path="error" />
+				<Forward name="outputFailure" path="error" />
+				<Forward name="outputWarnings" path="error" />
+				<Forward name="success" path="READY"/>
+			</XmlInputValidator>
+			
+			<Exits>
+				<Exit name="READY" state="SUCCESS" />
+			</Exits>
+
+			<XsltPipe name="transform XML" styleSheetName="xsl/persoon2brief.xsl"/>
+			<EchoPipe name="okay">
+				<Forward name="success" path="READY"/>
+			</EchoPipe>
+			<EchoPipe name="error" getInputFromFixedValue="error">
+				<Forward name="success" path="READY"/>
+			</EchoPipe>
+
+		</Pipeline>
+	</Adapter>
+	
+</Module>

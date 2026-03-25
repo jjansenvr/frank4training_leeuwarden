@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<output>
-   <landnaam>Nederland</landnaam>
-   <landnummerprefix>+31</landnummerprefix>
+<output xmlns:fn="http://www.w3.org/2005/xpath-functions">
+   <voornaam>Jeroen</voornaam>
+   <huisnummer>24</huisnummer>
+   <rollen>
+      <role>architect</role>
+      <role>trainer</role>
+   </rollen>
 </output>

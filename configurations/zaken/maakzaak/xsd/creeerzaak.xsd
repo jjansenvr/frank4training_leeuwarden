@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://example.com/zaak"
+    xmlns="http://example.com/zaak"
+    elementFormDefault="qualified">
+    
+    <!-- ======================= -->
+    <!--   Request Element        -->
+    <!-- ======================= -->
+    
+    <xsd:element name="CreeerZaakRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Referentie" type="xsd:string"/>
+                <xsd:element name="ZaakType" type="xsd:string"/>
+                <xsd:element name="Omschrijving" type="xsd:string"/>
+                <xsd:element name="StartDatum" type="xsd:date"/>
+                <xsd:element name="Initiator" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <!-- ======================= -->
+    <!--   Response Element       -->
+    <!-- ======================= -->
+    
+    <xsd:element name="CreeerZaakResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="ZaakId" type="xsd:string"/>
+                <xsd:element name="Status" type="xsd:string"/>
+                <xsd:element name="Melding" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+</xsd:schema>

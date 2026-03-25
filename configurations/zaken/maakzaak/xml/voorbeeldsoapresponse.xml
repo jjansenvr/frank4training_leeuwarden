@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:zak="http://example.com/zaak">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <zak:CreeerZaakResponse>
+            <ZaakId>ZK-20260324-98765</ZaakId>
+            <Status>Aangemaakt</Status>
+            <Melding>Zaak succesvol aangemaakt</Melding>
+        </zak:CreeerZaakResponse>
+    </soapenv:Body>
+</soapenv:Envelope>

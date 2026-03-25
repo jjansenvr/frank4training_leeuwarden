@@ -1,0 +1,8 @@
+<json>
+    {
+    "voornaam": "Jeroen",
+    "achternaam": "Jansen van rosendaal",
+    "huisnummer":24 ,
+    "roles": ["architect", "trainer"]
+    }
+</json>

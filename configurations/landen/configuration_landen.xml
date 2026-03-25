@@ -8,7 +8,8 @@
 		</Receiver>
 		<Pipeline firstPipe="transform XML">
 			<Json2XmlInputValidator schema="xsd/landcode.xsd" root="landcode" produceNamespacelessXml="true" name="toxml">				
-				<Forward name="failure" path="EXIT" />
+				<Param name="landcode" sessionKey="landcode"></Param>
+				<Forward name="failure" path="READY" />
 			</Json2XmlInputValidator>
 			<Exits>
 				<Exit name="READY" state="SUCCESS" />
