@@ -6,28 +6,31 @@
 		<Receiver name="local-zaak">
 			<WebServiceListener name="local-zaak-listener" soapAction="creerzaak" />
 		</Receiver>
-		<Pipeline firstPipe="transform XML">
-
-			<XmlInputValidator name="validateZaak" schema="xsd/zaak.xsd" root="zaak">
+		<Pipeline>
+			<SoapInputValidator name="validateZaak" 
+					schemaLocation="http://example.com/zaak creeerzaak\xsd\creeerzaak.xsd" soapBody="CreeerZaakRequest" outputSoapBody="CreeerZaakResponse">
 				<Forward name="exception" path="error" />
-				<Forward name="parserError" path="error" />
 				<Forward name="failure" path="error" />
-				<Forward name="warnings" path="error" />
-				<Forward name="outputParserError" path="error" />
-				<Forward name="outputFailure" path="error" />
-				<Forward name="outputWarnings" path="error" />
-				<Forward name="success" path="READY"/>
-			</XmlInputValidator>
-			
+				<Forward name="outputFailure" path="READY" />
+<!--			<Forward name="parserError" path="okay" />
+				
+				<Forward name="warnings" path="okay" />
+				<Forward name="outputParserError" path="okay" />
+				<Forward name="outputFailure" path="okay" />
+				<Forward name="outputWarnings" path="okay" />
+-->	
+			</SoapInputValidator>
+						
 			<Exits>
 				<Exit name="READY" state="SUCCESS" />
 			</Exits>
-
-			<XsltPipe name="transform XML" styleSheetName="xsl/persoon2brief.xsl"/>
+			
 			<EchoPipe name="okay">
 				<Forward name="success" path="READY"/>
 			</EchoPipe>
-			<EchoPipe name="error" getInputFromFixedValue="error">
+
+			
+			<EchoPipe name="error">
 				<Forward name="success" path="READY"/>
 			</EchoPipe>
 

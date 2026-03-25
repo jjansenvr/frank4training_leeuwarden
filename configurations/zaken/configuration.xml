@@ -2,6 +2,6 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="../FrankConfig.xsd"
 	>
-	<Include ref="./configuration_zaken.xml"/>
+	<Include ref="./configuration_creeerzaak.xml"/>
 	
 </Configuration>

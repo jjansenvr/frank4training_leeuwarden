@@ -1,4 +1,4 @@
-<?xml-model href="persoon.xsd"?>
+<!DOCTYPE persoon SYSTEM "persoon.dtd">
 <persoon>
     <voornaam>Jeroen</voornaam>
     <achternaam>Jansen van Rosendaal</achternaam>

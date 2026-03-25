@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<output xmlns:fn="http://www.w3.org/2005/xpath-functions">
-   <voornaam>Jeroen</voornaam>
-   <huisnummer>24</huisnummer>
-   <rollen>
-      <role>architect</role>
-      <role>trainer</role>
-   </rollen>
-</output>
+<brief>
+   <adresregel_1>Jeroen Jansen van Rosendaal</adresregel_1>
+   <adresregel_2>Westersingel 42</adresregel_2>
+   <adresregel_3>3014 GT Rotterdam</adresregel_3>
+</brief>
