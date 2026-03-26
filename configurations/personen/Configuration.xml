@@ -3,5 +3,6 @@
 	xsi:noNamespaceSchemaLocation="../FrankConfig.xsd"
 	>
 	<Include ref="./configuration_personen.xml"/>
+	<Include ref="./configuration_landen.xml"/>
 	
 </Configuration>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domains xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="LookupTable.xsd">
+    <domain name="Landen">
+        <value from="NL" to="Nederland"/>
+        <value from="BE" to="België"/>
+        <value from="DE" to="Duitsland"/>
+        <value from="FR" to="Frankrijk"/>
+        <value from="ES" to="Spanje"/>
+        <value from="IT" to="Italië"/>
+        <value from="LU" to="Luxemburg"/>
+        <value from="UK" to="Verenigd Koninkrijk"/>
+        <value from="IE" to="Ierland"/>
+        <value from="DK" to="Denemarken"/>
+        <value from="NO" to="Noorwegen"/>
+        <value from="SE" to="Zweden"/>
+        <value from="FI" to="Finland"/>
+        <value from="AT" to="Oostenrijk"/>
+        <value from="CH" to="Zwitserland"/>
+        <value from="PT" to="Portugal"/>
+        <value from="PL" to="Polen"/>
+        <value from="CZ" to="Tsjechië"/>
+        <value from="SK" to="Slowakije"/>
+        <value from="HU" to="Hongarije"/>
+        <value from="GR" to="Griekenland"/>
+        <value from="RO" to="Roemenië"/>
+        <value from="BG" to="Bulgarije"/>
+        <value from="HR" to="Kroatië"/>
+        <value from="SI" to="Slovenië"/>
+        <value from="EE" to="Estland"/>
+        <value from="LV" to="Letland"/>
+        <value from="LT" to="Litouwen"/>
+    </domain>
+    <domain name="LandNummers">
+        <value from="NL" to="+31"/>
+        <value from="BE" to="+32"/>
+        <value from="DE" to="+49"/>
+        <value from="FR" to="+33"/>
+        <value from="ES" to="+34"/>
+        <value from="IT" to="+39"/>
+        <value from="LU" to="+352"/>
+        <value from="UK" to="+44"/>
+        <value from="IE" to="+353"/>
+        <value from="DK" to="+45"/>
+        <value from="NO" to="+47"/>
+        <value from="SE" to="+46"/>
+        <value from="FI" to="+358"/>
+        <value from="AT" to="+43"/>
+        <value from="CH" to="+41"/>
+        <value from="PT" to="+351"/>
+        <value from="PL" to="+48"/>
+        <value from="CZ" to="+420"/>
+        <value from="SK" to="+421"/>
+        <value from="HU" to="+36"/>
+        <value from="GR" to="+30"/>
+        <value from="RO" to="+40"/>
+        <value from="BG" to="+359"/>
+        <value from="HR" to="+385"/>
+        <value from="SI" to="+386"/>
+        <value from="EE" to="+372"/>
+        <value from="LV" to="+371"/>
+        <value from="LT" to="+370"/>
+        <value from="US" to="+1"/>
+        <value from="CA" to="+1"/>
+        <value from="AU" to="+61"/>
+        <value from="NZ" to="+64"/>
+        <value from="CN" to="+86"/>
+        <value from="JP" to="+81"/>
+        <value from="IN" to="+91"/>
+        <value from="BR" to="+55"/>
+    </domain>
+</domains>

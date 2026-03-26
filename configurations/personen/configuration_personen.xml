@@ -8,7 +8,7 @@
 		</Receiver>
 		<Pipeline firstPipe="transform XML">
 
-			<XmlInputValidator name="validatePersoon" schema="xsd/persoon.xsd" root="persoon">
+			<XmlInputValidator name="validatePersoon" schema="personen/xsd/persoon.xsd" root="persoon">
 				<Forward name="exception" path="error" />
 				<Forward name="parserError" path="error" />
 				<Forward name="failure" path="error" />
@@ -23,7 +23,7 @@
 				<Exit name="READY" state="SUCCESS" />
 			</Exits>
 
-			<XsltPipe name="transform XML" styleSheetName="xsl/persoon2brief.xsl"/>
+			<XsltPipe name="transform XML" styleSheetName="personen/xsl/persoon2brief.xsl"/>
 			<EchoPipe name="okay">
 				<Forward name="success" path="READY"/>
 			</EchoPipe>

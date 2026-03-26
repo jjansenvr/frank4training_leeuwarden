@@ -1,4 +1,4 @@
-<Module active="false"
+<Module
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="../FrankConfig.xsd"
 	>
@@ -7,14 +7,14 @@
 			<ApiListener uriPattern="landen"></ApiListener>
 		</Receiver>
 		<Pipeline firstPipe="transform XML">
-			<Json2XmlInputValidator schema="xsd/landcode.xsd" root="landcode" produceNamespacelessXml="true" name="toxml">				
+			<Json2XmlInputValidator schema="landen/xsd/landcode.xsd" root="landcode" produceNamespacelessXml="true" name="toxml">				
 				<Param name="landcode" sessionKey="landcode"></Param>
 				<Forward name="failure" path="READY" />
 			</Json2XmlInputValidator>
 			<Exits>
 				<Exit name="READY" state="SUCCESS" />
 			</Exits>
-			<XsltPipe name="transform XML" styleSheetName="xsl/landcode2land.xsl">
+			<XsltPipe name="transform XML" styleSheetName="landen/xsl/landcode2land.xsl">
 			
 			
 				<Forward name="success" path="READY"/>
